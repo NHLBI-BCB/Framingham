@@ -26,8 +26,6 @@ for(i in 1:length(varlist)) {
 }
 unlist(num_variables)                                    #Table of num of variables for each data file                  
 
-
-
 ## Data Dictionary XML Files
 ## Haky's Function 
 ## copy and paste the function below
@@ -61,13 +59,3 @@ codefun =  function(filename)
 ## Example on single XML File
 xmlfile = 'phs000007.v23.pht000298.v5.crp3_1s.data_dict.xml'
 codelist = codefun(xmlfile)
-
-## Multiple XML Files (doesn't work)
-# 
-# temp = list.files(pattern="*data_dict.xml")
-# for (i in 1:length(temp)) {
-#   names <-paste("data_dict",i, sep=".")
-#   xmlfile = temp[i]
-#   assign(names, codefun(xmlfile))
-# }
-
